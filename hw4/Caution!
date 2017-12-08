@@ -1,0 +1,23 @@
+---------
+STRING
+expand: string input&output
+(scanf/gets/getchar)
+
+---------
+PROBLEM file:
+"
+abcd
+abcd
+"
+total chars: 10 (a,b,c,d,\n,a,b,c,d,  \n!!! )
+
+file:
+"
+a
+
+"
+total chars: 3 (a, \n, \n!!!!)
+
+---------
+SCANF
+记得把空格/回车读进去
