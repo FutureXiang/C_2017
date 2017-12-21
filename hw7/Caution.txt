@@ -9,3 +9,6 @@ c的struct和strcpy
 
 multi.c:
 c的struct 链表 链表插入排序合并
+
+monkey.c:
+约瑟夫模拟 check
