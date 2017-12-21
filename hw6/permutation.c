@@ -4,13 +4,26 @@
 int n;
 int a[11];
 int v[11];
+void print()
+{
+    int i;
+    printf("a:\n");
+    for(i=1;i<=n;i++)
+	printf("%d ",a[i]);
+    printf("\n");
+    printf("v:\n");
+    for(i=1;i<=n;i++)
+	printf("%d ",v[i]);
+    printf("\n");
+}
 void per(int pos)
 {
+    print();
     int i;
     if(pos==n+1)
     {
-	for(i=1;i<=n;i++) printf("%d ",a[i]);
-	printf("\n");
+	printf("OK!\n");
+	print();
 	return;
     }
     for(i=1;i<=n;i++)
@@ -21,6 +34,7 @@ void per(int pos)
 	    a[pos]=i;
 	    per(pos+1);
 	    v[i]=0;
+	    a[pos]=0;
 	}
     }
 }
