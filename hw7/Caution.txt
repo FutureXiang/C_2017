@@ -1,3 +1,46 @@
+下面四个运算符中，优先级最低的是 B
+        
+(A) ();
+(B) ?:;
+(C)－>;
+(D)++;
+
+以下对结构类型变量std1的定义中错误的是 D
+      
+(A)#define STUDENT struct student
+   STUDENT
+     {  int num;
+        float age;
+     } std1;
+(B)struct student 
+     {  int num;
+        float age;
+     };
+   struct student std1;
+(C)struct 
+    {  int num;
+       float age;
+    } std1;
+(D)struct
+    {  int num;
+       float age;
+    } student;    ------位置！！！
+struct student std1;
+
+若有以下说明和语句:
+struct student
+{
+    int age;
+    int num;;
+}std, *p;
+p = &std;
+则以下对结构变量 std 中成员 age 的引用方式不正确的是D
+
+(A)   std.age
+(B)  p->age
+(C)  (*p).age
+(D)  *p.age      ------优先级问题！！
+
 count.c:
 c的struct和qsort
 
@@ -12,3 +55,6 @@ c的struct 链表 链表插入排序合并
 
 monkey.c:
 约瑟夫模拟 check
+
+index.c:
+islower isupper isalpha ispunct
