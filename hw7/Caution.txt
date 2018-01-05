@@ -57,4 +57,6 @@ monkey.c:
 约瑟夫模拟 check
 
 index.c:
-islower isupper isalpha ispunct
+islower isupper isalpha ispunct的使用
+二维链表
+end+1 < strlen(in) -> end++
