@@ -74,7 +74,7 @@ int main()
     freopen("crossin.txt","r",stdin);
     freopen("crossout.txt","w",stdout);
     struct wordS *head=&E[++numE];
-    strcpy(head->str,"A");
+    strcpy(head->str,"!");
     V.nxt=head;
 
     while(gets(in))
@@ -103,7 +103,7 @@ int main()
     struct wordS *p; 
     for(p=V.nxt;p;p=p->nxt)
     {
-	if(strcmp(p->str,"A")==0) continue;
+	if(strcmp(p->str,"!")==0) continue;
 	printf("%s",p->str);
 	struct pos *q = p->next;
 	printf(":(%d,%d)",q->x+1,q->y+1);
