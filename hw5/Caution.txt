@@ -1,4 +1,0 @@
-xor.c:
-while(scanf("%d",&a[++n])!=EOF);
-n--;
-否则会把0(EOF)读进去!
