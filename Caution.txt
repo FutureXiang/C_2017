@@ -63,3 +63,5 @@ D  ++;
 #define M(y)((y)*(y)+3*(y))
 #define MAX(a,b)((a>b)?(a):(b))
 
+14. strcpy: *拷完* \0停止，后面的不管
+
